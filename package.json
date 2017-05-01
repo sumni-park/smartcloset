@@ -1,0 +1,23 @@
+{
+  "name": "smartcloset",
+  "version": "1.0.0",
+  "description": "강승현 박경민 박수민 이성준",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartcloset2017/smartcloset.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartcloset2017/smartcloset/issues"
+  },
+  "homepage": "https://github.com/smartcloset2017/smartcloset#readme",
+  "dependencies": {
+    "say": "^0.11.0",
+    "weather-js": "^2.0.0"
+  }
+}
