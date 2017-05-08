@@ -1,4 +1,4 @@
-var Gpio = rquire('onoff').Gpio,
+var Gpio = require('onoff').Gpio,
 // exports 안에 코드를 넣어주면 됨
 module.exports = {
   motion: function() {
@@ -7,11 +7,11 @@ module.exports = {
 	pir.watch(function(err, value) {
 		  if (err) exit();
 			  console.log('Intruder detected');
-			    if(value == 1)motion =true;  
+			    if(value == 1)motion =true;
 	});
-	 
+
 	console.log('Pi Bot deployed successfully!');
-	 
+
 	function exit() {
 		    pir.unexport();
 			  process.exit();
