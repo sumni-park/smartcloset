@@ -7,7 +7,7 @@ module.exports = {
 	pir.watch(function(err, value) {
 		  if (err) exit();
 			  console.log('Intruder detected');
-			    if(value == 1)motion =true;
+			    if(value == 1) motion =true;
 	});
 
 	console.log('Pi Bot deployed successfully!');
@@ -19,6 +19,6 @@ module.exports = {
 
 
 
-    return true;  // true 면 모션인식이 된 것으로 판단.
+    return motion;  // true 면 모션인식이 된 것으로 판단.
   }
 }
