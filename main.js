@@ -14,9 +14,9 @@ function execution() {
   if(isMotion) {
     weather.weather('Seoul')
     .then((weatherSpeak) => {
-      say.speak(weatherSpeak, 'Alex');
+      say.speak(weatherSpeak, 'Victoria');
       isMotion = false;
-      delay(1000);
+      delay(10000);
     });
   }
 }
