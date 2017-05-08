@@ -7,7 +7,7 @@ module.exports = {
 	pir.watch(function(err, value) {
 		  if (err) exit();
 			  console.log('Intruder detected');
-			    if(value == 1) motion =true;
+			    if(value == 1) return motion =true;
 	});
 
 	console.log('Pi Bot deployed successfully!');
