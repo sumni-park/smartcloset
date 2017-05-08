@@ -1,4 +1,4 @@
-var Gpio = require('onoff').Gpio,
+var Gpio = require('onoff').Gpio;
 // exports 안에 코드를 넣어주면 됨
 module.exports = {
   motion: function() {
@@ -19,6 +19,6 @@ module.exports = {
 
 
 
-    return motion;  // true 면 모션인식이 된 것으로 판단.
+    return true;  // true 면 모션인식이 된 것으로 판단.
   }
 }
