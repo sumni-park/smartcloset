@@ -1,5 +1,7 @@
 var Gpio = require('onoff').Gpio;
 var weather = require('./weather.js');
+var say = require('say');
+
 // exports 안에 코드를 넣어주면 됨
 module.exports = {
   motion: function() {
@@ -14,7 +16,7 @@ module.exports = {
             say.speak(weatherSpeak, 'Victoria');
             isMotion = false;
             delay(10000);
-          });
+          })
         }
 	});
 

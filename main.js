@@ -1,5 +1,4 @@
 var motion = require('./motion.js');
-var say = require('say');
 
 
 var isMotion = false; // 모션이 들어왔는지 확인하는 변수
