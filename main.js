@@ -7,7 +7,7 @@ console.log('start');
 // setInterval(execution, 2000);
 
 motion.motion();
-
+/*
 function execution() {
   isMotion = motion.motion();
   console.log('isMotion : ', isMotion);
@@ -20,3 +20,4 @@ function execution() {
     });
   }
 }
+*/
