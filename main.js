@@ -6,7 +6,7 @@ var say = require('say');
 var isMotion = false; // 모션이 들어왔는지 확인하는 변수
 console.log('start');
 
-setInterval(execution, 100);
+setInterval(execution, 2000);
 
 function execution() {
   isMotion = motion.motion();
