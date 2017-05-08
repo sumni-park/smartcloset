@@ -15,6 +15,7 @@ module.exports = {
           .then((weatherSpeak) => {
             say.speak(weatherSpeak, 'Victoria');
             isMotion = false;
+            console.log("speak success!!");
             delay(10000);
           })
         }
