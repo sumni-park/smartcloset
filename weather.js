@@ -16,16 +16,16 @@ module.exports = {
           if(err) return reject(err);
 
           var weatherData = JSON.stringify(result, null, 2);
-          var weatherSpeak = 'this is start';
+          var weatherSpeak = "";
           // weatherData에 이제 api로 받은 정보가 들어갈 것임
           // 적당한 조건에 의해 weatherSpeak에 문장을 만들어주면 됨.
-        	var curr_skycode = result[0].current.skycode;
-		      var curr_date = result[0].current.date;
+	  var curr_skycode = result[0].current.skycode;
+	  var curr_date = result[0].current.date;
        	  var curr_temp = result[0].current.temperature;
-	        var td_low = result[0].forecast[1].low;
-		      var td_high = result[0].forecast[1].high;
-		      var yd_high = result[0].forecast[1].high;
-		      var skytext = "";
+	  var td_low = result[0].forecast[1].low;
+	  var td_high = result[0].forecast[1].high;
+	  var yd_high = result[0].forecast[1].high;
+ 	  var skytext = "";
           var cmptext = "";
           var dateArr = curr_date.split('-');
     
@@ -58,7 +58,7 @@ module.exports = {
     
           if(td_high-td_low>=10) cmptext+="크게 벌어지는 일교차에 대비하여 옷차림 하셔야겠습니다. ";
           weatherSpeak += dateArr[1]+"월" + dateArr[2]+"일 "+"현재 서울 기온은 " + curr_temp + "도로 "+ skytext;
-		      weatherSpeak += "오늘 하루 최저 기온은 " + td_low + "도 최고 기온은 " + td_high +"도로 " + cmptext;
+	  weatherSpeak += "오늘 하루 최저 기온은 " + td_low + "도 최고 기온은 " + td_high +"도로 " + cmptext;
 
           return resolve(weatherSpeak);
         });
